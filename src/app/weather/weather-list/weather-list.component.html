@@ -1,1 +1,32 @@
-<app-weather-item></app-weather-item>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="btn btn-success">New Weather</div>
+    </div>
+</div>
+    <hr>
+    <div class="row">
+        <div class="col-xs-12">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Flow</th>
+                            <th>Pressure</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let weather of weathers">
+                            <th>
+                                <h4>{{ weather.flow }}</h4>
+                            </th>
+                            <th>
+                                <h4>{{ weather.pressure }}</h4>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            <app-weather-item></app-weather-item>
+        </div>
+    </div>
+
+    <!-- <a href="#" class="list-group-item clearfix" *ngFor="let weather of weathers"></a> -->
+
