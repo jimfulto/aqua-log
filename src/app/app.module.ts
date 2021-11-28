@@ -8,6 +8,7 @@ import { WeatherComponent } from './weather/weather.component';
 import { HeaderComponent } from './header/header.component';
 import { WeatherListComponent } from './weather/weather-list/weather-list.component';
 import { WeatherItemComponent } from './weather/weather-list/weather-item/weather-item.component';
+import { WeatherDetailComponent } from './weather/weather-detail/weather-detail.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { WeatherItemComponent } from './weather/weather-list/weather-item/weathe
     WeatherComponent,
     HeaderComponent,
     WeatherListComponent,
-    WeatherItemComponent
+    WeatherItemComponent,
+    WeatherDetailComponent
   ],
   imports: [
     BrowserModule,

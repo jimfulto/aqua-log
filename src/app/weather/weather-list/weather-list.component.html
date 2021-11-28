@@ -6,25 +6,15 @@
     <hr>
     <div class="row">
         <div class="col-xs-12">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Flow</th>
-                            <th>Pressure</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr *ngFor="let weather of weathers">
-                            <th>
-                                <h4>{{ weather.flow }}</h4>
-                            </th>
-                            <th>
-                                <h4>{{ weather.pressure }}</h4>
-                            </th>
-                        </tr>
-                    </tbody>
-                </table>
-            <app-weather-item></app-weather-item>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Flow</th>
+                        <th>Pressure</th>
+                    </tr>
+                </thead>
+            </table>
+            <app-weather-item *ngFor="let weatherEl of weathers; let i = index" [weather]="weatherEl" [index]="i"></app-weather-item>
         </div>
     </div>
 

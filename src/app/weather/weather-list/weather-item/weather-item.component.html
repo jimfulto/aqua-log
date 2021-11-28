@@ -1,1 +1,15 @@
-<p>weather-item works!</p>
+<a style="cursor:pointer;" [routerLink]="[index]" routerLinkActive="active">
+    <table>
+        <tbody>
+            <tr>
+                <th>
+                    <h4>{{ weather.flow }}</h4>
+                </th>
+                <th>
+                    <h4>{{ weather.pressure }}</h4>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+</a>
+
